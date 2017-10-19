@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{the_title}}</h2>
+<!-- Direccion a depositar valores para que realise la operacion -->
+<form action="/calculate" method="post">
+    <table>
+        <p>Use thes form to submit the data to calculate the volume</p>
+        <tr>
+            <td>R:</td>
+            <td><input type="number" name="R"></td>
+            <td>g:</td>
+            <td><input type="number" name="g"></td>
+        </tr>
+    </table>
+     <p>When you're ready, click this button</p>
+     <p><input type="submit" name="btn_calculate" value="Calculate!"></p>
+</form>
+{% endblock body %}
